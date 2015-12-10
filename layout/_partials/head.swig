@@ -8,14 +8,14 @@
 <meta http-equiv=”Cache-Control” content=”no-transform” />
 <meta http-equiv=”Cache-Control” content=”no-siteapp” />
 
-{% if config.description %}
-    <meta name="description" content="{{page.title}},{{page.description}} {{ config.description }}" />
-{% endif %}
-
 {% if page.tags and page.tags.length %}
-  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %} {{page.keywords}}" />
+  <meta name="keywords" content=" {{page.keywords}},{% for tag in page.tags %}{{ tag.name }},{% endfor %} " />
 {% elif theme.keywords %}
   <meta name="keywords" content="{{ theme.keywords }} {{page.keywords}}" />
+{% endif %}
+
+{% if config.description %}
+    <meta name="description" content="{{page.title}},{{page.description}} {{ config.description }}" />
 {% endif %}
 
 {% if theme.google_site_verification %}
@@ -30,9 +30,13 @@
 <meta name="sogou_site_verification" content="{{ config.sogou_site_verification }}"/>
 {% endif %} 
 
+{% if config.bing_site_verification %}
+<meta name="msvalidate.01" content="{{ config.bing_site_verification }}"/>
+{% endif %} 
+
 
 {% if config.baidu_union_verify %}
-  <meta name="baidu_union_verify" content="{{ config.baidu_union_verify }}" />
+  <meta name="baidu_union_verify" content="{{ config.baidu_union_verify }}">
 {% endif %}
 
 {% if config.baidu_cloud_monitor_verify %}

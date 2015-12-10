@@ -1,9 +1,9 @@
 menu:
   #home: /
   about: /about
+  tags: /tags
   categories: /categories
   archives: /archives
-  tags: /tags
   commonweal: /404.html
 
 # Place your favicon.ico to /source directory.
@@ -11,7 +11,7 @@ favicon: /favicon.ico
 
 
 # Set default keywords (Use a comma to separate)
-keywords: "shadowsocks,git,github,git工作流,大数据,jstorm,fastdfs,xirong,ixirong,分布式"
+keywords: 
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -22,10 +22,10 @@ rss:
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
 # linecons:https://github.com/fontello/linecons.font
-icon_font: linecons
+#icon_font: linecons
 #icon_font: fifty-shades
 #icon_font: feather
-#icon_font: default
+icon_font: default
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
