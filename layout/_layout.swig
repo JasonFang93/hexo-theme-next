@@ -22,20 +22,35 @@
 
     <div id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
+        <div id="content" class="content c-duoshuo-hot-artical">
           {% block content %}{% endblock %}
 
           {% if is_post() and theme.duoshuo_hotartical and page.title  %}
-          <!-- 多说热评文章-->
-          <div class="c-duoshuo-hot-artical">
+          <!-- 多说热评文章-->      
           <p>热评文章</p>
           <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
-          <div>
           {% endif %}
-         
-        </div>        
+
+          {% if is_post() and theme.wumi_suggest and page.title  %}
+            <script type="text/javascript" id="wumiiRelatedItems"></script>
+
+            <script type="text/javascript">
+            var wumiiPermaLink = ""; //请用代码生成文章永久的链接
+            var wumiiTitle = ""; //请用代码生成文章标题
+            var wumiiTags = ""; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
+            var wumiiCategories = []; //请用代码生成文章分类，分类名放在 JSONArray 中，如: ["分类1", "分类2"]
+            var wumiiSitePrefix = "http://www.ixirong.com/";
+            var wumiiParams = "&num=5&mode=1&pf=JAVASCRIPT";
+            </script>
+
+            <script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
+              <a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
+                <img src="http://static.wumii.cn/images/pixel.png" alt="无觅关联推荐，快速提升流量" style="border:0;padding:0;margin:0;" />
+              </a>
+          {% endif %}
+        </div>
       </div>
-               
+
 
       {% block sidebar %}{% endblock %}
     </div>

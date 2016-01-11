@@ -28,11 +28,11 @@
 
 {% if config.sogou_site_verification %}
 <meta name="sogou_site_verification" content="{{ config.sogou_site_verification }}"/>
-{% endif %} 
+{% endif %}
 
 {% if config.bing_site_verification %}
 <meta name="msvalidate.01" content="{{ config.bing_site_verification }}"/>
-{% endif %} 
+{% endif %}
 
 
 {% if config.baidu_union_verify %}
@@ -41,6 +41,10 @@
 
 {% if config.baidu_cloud_monitor_verify %}
   <meta  baidu-gxt-verify-token="{{ config.baidu_cloud_monitor_verify }}" />
+{% endif %}
+
+{% if config.wumi_verification %}
+<meta name="wumiiVerification" content="{{ config.wumi_verification }}" />
 {% endif %}
 
 {% if theme.fancybox %}
