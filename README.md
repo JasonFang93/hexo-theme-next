@@ -3,6 +3,8 @@
 
 想使用 xirong 修改的next 的主题的朋友们，方法如下：`$ git clone https://github.com/xirong/hexo-theme-next.git themes/next` ，在自己repository 根目录下的_config.yml 中配置为 `theme: next` 就可以了。
 
+有些朋友可能不会在根目录下面的 `_config.yml` 进行配置，可以参考我的[完整配置](_config_root.yml)，泄密的内容注释掉了。
+
 说明：从iissan版本新增特性如下：
 
 2015-04 新增特性（这些已经合并到iissnan的分支上面：https://github.com/iissnan/hexo-theme-next）
