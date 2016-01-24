@@ -101,8 +101,8 @@
     </div>
 
     <div class="post-footer">
-    
-    <! -- 添加捐赠图标 -->
+
+<! -- 添加捐赠图标 -->
     {% if config.donate.enable %}
     {% if is_home() %}
     {% else %}
@@ -114,26 +114,26 @@
            &uarr;<br>
            {% if config.donate.text %}
             {{ config.donate.text }}
-           {% endif %}          
+           {% endif %}
         </span>
         <br>
-      </div>  
-  
+      </div>
+
       <div id="donate_guide" class="donate_bar center hidden">
         {% if config.donate.alipay %}
           <a href="{{ config.donate.alipay }}" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
           <img src="{{ config.donate.alipay }}" title="支付宝打赏" height="164px" width="164px">
-          </a> 
-        {% endif %}  
+          </a>
+        {% endif %}
 
       {% if config.donate.wechat %}
        <a href="{{ config.donate.wechat }}" title="微信打赏" class="fancybox" rel="article0">
          <img src="{{ config.donate.wechat }}" title="微信打赏" height="164px" width="164px">
        </a>
       {% endif %}
-    
+
       </div>
-  
+
       <script type="text/javascript">
         document.getElementById('btn_donate').onclick = function(){
           $('#donate_board').addClass('hidden');
@@ -144,9 +144,7 @@
 
     {% endif%}
 {% endif %}
-<! -- 添加捐赠图标 -->
-
-
+<! -- end 添加捐赠图标 -->
       {% if post.tags and post.tags.length %}
         <div class="post-tags">
           {% for tag in post.tags %}

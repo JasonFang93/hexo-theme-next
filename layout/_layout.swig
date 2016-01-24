@@ -22,16 +22,17 @@
 
     <div id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content c-duoshuo-hot-artical">
+        <div id="content" class="content">
           {% block content %}{% endblock %}
 
           {% if is_post() and theme.duoshuo_hotartical and page.title  %}
-          <!-- 多说热评文章-->      
+          <!-- 多说热评文章-->
           <p>热评文章</p>
-          <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+          <div class="ds-top-threads c-duoshuo-hot-artical" data-range="weekly" data-num-items="4"></div>
           {% endif %}
 
           {% if is_post() and theme.wumi_suggest and page.title  %}
+          <div class="c-duoshuo-hot-artical">
             <script type="text/javascript" id="wumiiRelatedItems"></script>
 
             <script type="text/javascript">
@@ -47,6 +48,7 @@
               <a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
                 <img src="http://static.wumii.cn/images/pixel.png" alt="无觅关联推荐，快速提升流量" style="border:0;padding:0;margin:0;" />
               </a>
+            </div>
           {% endif %}
         </div>
       </div>
