@@ -101,7 +101,7 @@ duoshuo_shortname: #多说名字
 ## 多说热评文章
 duoshuo_hotartical: #是否在每天文章下面启动多说的社评论问题功能，true启动，false不启用
 ## 无觅推荐
-wumi_suggest: #true 是否使用无觅推荐
+wumi_suggest: #true 是否使用无觅推荐，注意 无觅推荐和多说热评文章是互斥的，只通同时使用其中一个。
 ## 无觅验证工具
 wumi_verification: #使用无觅时候，需要验证站点的所属权，这个就是验证码，在文章的 header 中生成
 
