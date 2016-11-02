@@ -1,6 +1,9 @@
 
 =============
 
+2016-09月
+9月份 xirong 将自己的博客主题更新到了 next 官网的 5.1 版本，为了不于之前的版本冲突，特拉分支 `next5.1` ，你现在看到的 http://www.ixirong.com  的样子其实是 `next5.1` 分支上的改动。老版本还在 master 分支上面，喜欢的可以自行下载使用，有问题也欢迎 issues。
+
 想使用 xirong 修改的next 的主题的朋友们，方法如下：`$ git clone https://github.com/xirong/hexo-theme-next.git themes/next` ，在自己repository 根目录下的_config.yml 中配置为 `theme: next` 就可以了。
 
 有些朋友可能不会在根目录下面的 `_config.yml` 进行配置，可以参考我的[完整配置](_config_root.yml)，泄密的内容注释掉了。
