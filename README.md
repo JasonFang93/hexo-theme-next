@@ -1,5 +1,8 @@
 # NexT
 
+2016-11 
+www.ixirong.com 已经更新到 next 主题的 `5.0.1` 版本，master 分支上面记录了一些自由的改动，细化的可以 fork 下来使用；原先的 `0.4.2` 版本的改动保留在了分支 `next0.4.2` 上面，想使用的朋友可以继续使用。
+
 > 精于心，简于形
 
 <a href="http://notes.iissnan.com" target="_blank">在线预览 Preview</a> | <a href="http://theme-next.iissnan.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
