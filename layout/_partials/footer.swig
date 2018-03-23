@@ -5,20 +5,20 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <span class="author" itemprop="copyrightHolder"><a class="theme-link" href="https://github.com/JasonFang93">{{ config.author }}</a></span>
 </div>
 
 <div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>') }}
+  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io" target="_blank">Hexo</a>') }}
 </div>
 
 <div class="powered-by">
-   鲁ICP备15013969号
+   皖ICP备15004229号
 </div>
 
 <div class="theme-info">
   {{ __('footer.theme') }} -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next/">
+  <a class="theme-link" href="https://github.com/xirong/hexo-theme-next/" target="_blank">
     NexT.{{ theme.scheme }}
   </a>
 </div>
